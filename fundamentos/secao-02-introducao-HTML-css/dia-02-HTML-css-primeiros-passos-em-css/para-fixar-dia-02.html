@@ -4,26 +4,48 @@
     <meta charset="UTF-8">
     <title>HTML</title>
     <style>
-        .config-h1 {
-            font-size: 65px; color:orange;
+        body {
+            font-size: 16px;
+            line-height: 40px;
+        }
+        h1 {
+            font-size: 65px; 
+            color:orange;
+            font-family: sans-serif;
         }
         ul {
-            background-color:blue ;
+            background-color:white ;
+            text-align: center;
+            text-decoration: underline;
         }
-        .cor-fundo {
+
+        p {
+            font-weight: 600;
+            font-size: 3em;
+        }
+        #fundo-maçã {
+            font-style: italic;
             background-color: red;
+        }
+        #fundo-banana {
+            font-style:inherit;
+            background-color: yellow;
+        }
+        #fundo-goiaba {
+            font-style:unset;
+            background-color: green;
         }
 
 
     </style>
   </head>
   <body>
-    <h1 class="config-h1">Frutas</h1>
+    <h1>Frutas</h1>
     <p class="cor-fundo">Qual é a sua fruta favorita?</p>
     <ul class="cor-fundo">
-      <li>Maçã</li>
-      <li>Banana</li>
-      <li>Goiaba</li>
+      <li id="fundo-maçã">Maçã</li>
+      <li id="fundo-banana">Banana</li>
+      <li id="fundo-goiaba">Goiaba</li>
     </ul>
   </body>
 </html>
