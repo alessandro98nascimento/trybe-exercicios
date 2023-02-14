@@ -2,16 +2,29 @@
     background-color: black;
     color: white;
     font-family:Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    text-align:left;
 }
+
 
 h1 {
     font-weight: bold;
     font-family:fantasy;
 }
 p img {
-    width: 200px;
+    width: 300px;
 }
 ul li {
+    font-size: large;
     font-weight: bold;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+ol li {
+    font-size: large;
+    font-weight: bold;
+    text-align: left;
+    font-family: cursive;
 
 }
