@@ -11,6 +11,7 @@ h1 {
     font-weight: bold;
     font-family:fantasy;
     color: red;
+    font-size: 35px;
 }
 p img {
     width: 300px;
@@ -20,13 +21,34 @@ ul li {
     font-weight: bold;
     text-align: left;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: blue;
-
+    font-size: 15px;
 }
 ol li {
     font-size: large;
     font-weight: bold;
     text-align: left;
     font-family: cursive;
-
+    font-size: 15px;
+}
+h2 {
+    font-size: 20px;
+    color:orange;
+}
+strong {
+    color:crimson
+}
+.html{
+    font-size: 10px;     
+}
+.css{
+    font-size: 15px;
+}
+.soft-skills{
+    font-size: 20px;
+}
+.lider{
+    font-size: 25px;
+}
+.treinador{
+    font-size: 30px;
 }
