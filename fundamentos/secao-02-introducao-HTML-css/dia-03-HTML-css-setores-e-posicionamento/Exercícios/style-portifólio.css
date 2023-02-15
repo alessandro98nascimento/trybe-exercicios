@@ -1,0 +1,54 @@
+*{
+    background-color: black;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    text-align:left;
+}
+
+
+h1 {
+    font-weight: bold;
+    font-family:fantasy;
+    color: red;
+    font-size: 35px;
+}
+p img {
+    width: 300px;
+}
+ul li {
+    font-size: large;
+    font-weight: bold;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+ol li {
+    font-size: large;
+    font-weight: bold;
+    text-align: left;
+    font-family: cursive;
+    font-size: 15px;
+}
+h2 {
+    font-size: 20px;
+    color:orange;
+}
+strong {
+    color:crimson
+}
+.html{
+    font-size: 10px;     
+}
+.css{
+    font-size: 15px;
+}
+.soft-skills{
+    font-size: 20px;
+}
+.lider{
+    font-size: 25px;
+}
+.treinador{
+    font-size: 30px;
+}
