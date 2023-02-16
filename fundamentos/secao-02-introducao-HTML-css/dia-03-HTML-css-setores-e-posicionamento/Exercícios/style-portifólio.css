@@ -12,9 +12,10 @@ h1 {
     font-family:fantasy;
     color: red;
     font-size: 35px;
+    text-align:center;
 }
-p img {
-    width: 300px;
+img {
+    width: 200px;
 }
 ul li {
     font-size: large;
@@ -51,4 +52,21 @@ strong {
 }
 .treinador{
     font-size: 30px;
+}
+.inline{
+    margin-right: 20px;
+    display: inline-block;
+    width: 200 px;
+}
+
+.div-1 {
+    margin: auto;
+    width: 100%;
+}
+.borda-style {
+    background: red;
+    padding: 5px;
+}
+.ul-text {
+    
 }
