@@ -24,49 +24,73 @@ ul li {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 15px;
 }
-ol li {
+.links li{
     font-size: large;
     font-weight: bold;
     text-align: left;
     font-family: cursive;
-    font-size: 15px;
+    text-align: center;
 }
 h2 {
+    text-align: center;
     font-size: 20px;
     color:orange;
 }
 strong {
     color:crimson
 }
-.html{
-    font-size: 10px;     
+.html {
+    font-size: 10px;
 }
-.css{
+.css {
     font-size: 15px;
 }
-.soft-skills{
+.soft-skills {
     font-size: 20px;
 }
-.lider{
+.lider {
     font-size: 25px;
 }
-.treinador{
+.treinador {
     font-size: 30px;
 }
-.inline{
-    margin-right: 20px;
+.inline {
     display: inline-block;
     width: 200 px;
 }
 
-.div-1 {
-    margin: auto;
+.box-1 {
+    margin-left: 200px;
     width: 100%;
 }
 .borda-style {
     background: red;
     padding: 5px;
 }
-.ul-text {
-    
+.impar {
+    font-style: italic;
 }
+.alinha li{
+    margin-left: 200px;
+    display: inline-block;
+}
+.botao-foto {
+    text-align: center;
+}
+.dimensão {
+    margin-left: 150px
+}
+.p-text {
+    margin-left: 50px;
+    font-size: 20px;
+}
+.div-infos li {
+    text-align: center;
+}
+.div-infos ul {
+    color: black;
+}
+.blogs li{
+    text-align: center;
+}
+
