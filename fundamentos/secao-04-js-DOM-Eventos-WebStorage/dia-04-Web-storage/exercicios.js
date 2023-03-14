@@ -1,4 +1,10 @@
 const texto = document.querySelector(".description");
+const textoBackgoundCollor = texto.style.backgroundColor = localStorage.getItem("backgroundCollor");
+const textoColor = texto.style.color = localStorage.getItem("color")
+const textoFontSize = texto.style.fontSize = localStorage.getItem("fontSize");
+const textolineHeight = texto.style.lineHeight = localStorage.getItem("lineHeight");
+const textofontFamily = texto.style.fontFamily = localStorage.getItem("fontFamily");
+
 
 const corFundo = document.getElementById("background-color").children;
 
@@ -17,19 +23,26 @@ const mudaFundo = () => {
         let botao = corFundo[index];
         botao.addEventListener("click", (event) =>{
             if(botao.innerText === "white"){
-                texto.style.backgroundColor = "white";
+                localStorage.setItem("backgroundCollor", "white");
+                texto.style.backgroundColor = localStorage.getItem("backgroundCollor");
+                
             }
             else if (botao.innerText === "black"){
-                texto.style.backgroundColor = "black";
+                localStorage.setItem("backgroundCollor", "black");
+                texto.style.backgroundColor = texto.style.backgroundColor = localStorage.getItem("backgroundCollor");
+                
             }
             else if (botao.innerText === "green"){
-                texto.style.backgroundColor = "green";
+                localStorage.setItem("backgroundCollor", "green");
+                texto.style.backgroundColor = localStorage.getItem("backgroundCollor");
             }
             else if (botao.innerText === "blue"){
-                texto.style.backgroundColor = "blue";
+                localStorage.setItem("backgroundCollor", "blue");
+                texto.style.backgroundColor = localStorage.getItem("backgroundCollor");
             }
             else if (botao.innerText === "yellow"){
-                texto.style.backgroundColor = "yellow";
+                localStorage.setItem("backgroundCollor", "yellow")
+                texto.style.backgroundColor = localStorage.getItem("backgroundCollor");
             }
         })
     }
@@ -40,13 +53,16 @@ const mudaCorTexto = () => {
         let botao = corTexto[index];
         botao.addEventListener("click", () => {
             if(botao.innerText === "black"){
-                texto.style.color = "black";
+                localStorage.setItem("color", "black")
+                texto.style.color = localStorage.getItem("color");
             }
             if(botao.innerText === "red"){
-                texto.style.color = "red";
+                localStorage.setItem("color", "red");
+                texto.style.color = localStorage.getItem("color");
             }
             if(botao.innerText === "white"){
-                texto.style.color = "white";
+                localStorage.setItem("color", "white");
+                texto.style.color = localStorage.getItem("color");
             }
         })
     }
@@ -57,19 +73,24 @@ const mudaTamanhoFonte = () => {
         let botao = tamanhoFonte[index];
         botao.addEventListener("click", (event) => {
             if(botao.innerText === "8px"){
-                texto.style.fontSize = "8px";
+                localStorage.setItem("fontSize", "8px");
+                texto.style.fontSize = localStorage.getItem("fontSize");
             }
             if(botao.innerText === "10px"){
-                texto.style.fontSize = "10px";
+                localStorage.setItem("fontSize", "10px");
+                texto.style.fontSize = localStorage.getItem("fontSize");
             }
             if(botao.innerText === "12px"){
-                texto.style.fontSize = "12px";
+                localStorage.setItem("fontSize", "12px");
+                texto.style.fontSize = localStorage.getItem("fontSize");
             }
             if(botao.innerText === "14px"){
-                texto.style.fontSize = "14px";
+                localStorage.setItem("fontSize", "14px");
+                texto.style.fontSize = localStorage.getItem("fontSize");
             }
             if(botao.innerText === "20px"){
-                texto.style.fontSize = "20px";
+                localStorage.setItem("fontSize", "20px");
+                texto.style.fontSize = localStorage.getItem("fontSize");
             }
         })
     }
@@ -80,19 +101,24 @@ const mudaEspaçoLinhas = () => {
         let botao = espaçoLinhas[index];
         botao.addEventListener("click", () => {
             if(botao.innerText === "1"){
+                localStorage.setItem("lineHeight", "1");
                 texto.style.lineHeight = "1";
             }
             if(botao.innerText === "normal"){
-                texto.style.lineHeight = "normal";
+                localStorage.setItem("lineHeight", "normal");
+                texto.style.lineHeight = localStorage.getItem("lineHeight");
             }
             if(botao.innerText === "1.5"){
-                texto.style.lineHeight = "1.5";
+                localStorage.setItem("lineHeight", "1.5");
+                texto.style.lineHeight = localStorage.getItem("lineHeight");
             }
             if(botao.innerText === "2.0"){
-                texto.style.lineHeight = "2.0";
+                localStorage.setItem("lineHeight", "2.0");
+                texto.style.lineHeight = localStorage.getItem("lineHeight");
             }
             if(botao.innerText === "3.0"){
-                texto.style.lineHeight = "3.0";
+                localStorage.setItem("lineHeight", "3.0");
+                texto.style.lineHeight = localStorage.getItem("lineHeight");
             }
         })
     }
@@ -103,10 +129,12 @@ const mudaEstiloFonte = () => {
         let botao = estiloDeFonte[index];
         botao.addEventListener("click", () => {
             if(botao.innerText === "Arial"){
-                texto.style.fontFamily = "Arial";
+                localStorage.setItem("fontFamily", "Arial");
+                texto.style.fontFamily = localStorage.getItem("fontFamily");
             }
             if(botao.innerText === "Times New Roman"){
-                texto.style.fontFamily = "Times, New Roman"
+                localStorage.setItem("fontFamily", "Times, New Roman");
+                texto.style.fontFamily = localStorage.getItem("fontFamily");
             }
         })
     }
