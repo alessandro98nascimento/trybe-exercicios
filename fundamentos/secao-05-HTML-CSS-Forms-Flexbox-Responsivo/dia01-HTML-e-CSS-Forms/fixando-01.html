@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
+    <form action="" method="get" enctype="multipart/form-data">
         <label for="checkbox">Lembre-se</label>
         <input type="checkbox" id="checkbox">
         <br>
@@ -15,9 +15,9 @@
         <input type="email" placeholder="Seu e-mail" id="eMail" name="eMail" autocomplete="off" autofocus required>
         <br>
         <label for="senha">Senha:</label>
-        <input type="text" placeholder="Sua senha" id="senha" type="password" name="senha" required>
+        <input type="password" placeholder="Sua senha" id="senha"  name="senha" required>
         <br>
-        <input type="button" value="Enviar">
+        <button type="submit">Enviar</button>
     </form>
     
 
