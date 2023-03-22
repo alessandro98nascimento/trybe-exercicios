@@ -1,0 +1,30 @@
+body {
+    color: black;
+    background-color: rgb(231, 173, 173);
+}
+
+.cards .card:nth-child(1){
+    display: flex;
+    font-size: 100px;
+    color: black;
+    border: black 1px solid;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px){
+    .cards .card:nth-child(2){
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 950px){
+    .cards .card:nth-child(3){
+        display: none;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .trick {
+        display: flex;
+        background-color: black;
+    }
+}
