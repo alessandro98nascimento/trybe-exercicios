@@ -78,9 +78,10 @@ const expectedResult2 = 'Duna';
 const smallerName = () => {
   let nameBook;
   // escreva aqui o seu código
-  const menorNome = books.forEach((name) => {
-    if (name.name.length === 4) {
-        nameBook = name.name;
+
+  const menorNome = books.forEach((nome) => {
+    if (!nameBook || nome.name.length < nameBook.length ) {
+        nameBook = nome.name;
     }});
   // Variável nameBook que receberá o valor do menor nome;
   return nameBook;
@@ -112,7 +113,7 @@ const expectedResult4 = false;
 
 function everyoneWasBornOnSecXX() {
   // escreva seu código aqui
-  const autores1901 = books.every((ano) => ano.author.birthYear >= 1901);
+  const autores1901 = books.every((ano) => ano.author.birthYear >= 1901 && ano.author.birthYear <= 2000);
   return autores1901;
 }
 
@@ -122,7 +123,7 @@ const expectedResult5 = true;
 
 const someBookWasReleaseOnThe80s = () => {
   // escreva seu código aqui
-  const anos80 = books.some((ano) => ano.releaseYear >= 80);
+  const anos80 = books.some((ano) => ano.releaseYear >= 1980 && ano.releaseYear <= 1989);
   return anos80;
 }
 
